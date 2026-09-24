@@ -1,0 +1,193 @@
+import java.util.Scanner;
+
+public class Main{}
+        public static void main(String[] args){Scanner scanner = new
+            
+//RELATIONAL OPERATOR (return bool:1 or 0) True / False
+int a=10, b=3;
+System.out.println("\na == b:"(a==b));
+System.out.println(" a != b: " (a !=b));
+System.out.println(" a > b: " (a > b));
+System.out.println(" a < b: " (a < b));
+System.out.println(" a <= b: " (a <= b));
+System.out.println(" a >= b: " (a >= b));
+
+// LOGICAL OPERATOR ( &&, ||, !)
+boolean p = true, q = false;
+System.out.println("\np && q: " (p&&));
+System.out.println("\ p || q: " (p||q));
+System.out.println("\!q: " (!q));
+System.out.println("\!p: " (!p));
+
+//ASSIGNMENT OPERATORS (+=, -=, *=, /=)
+int score = 50;
+score += 10;
+System.out.println("\nscore after +=10: +score");//60
+score *=2;
+System.out.println("\nscore after *=10: +score");//120
+
+// INCREMENT AND DECREMENT (post++, now, ++pre)
+int counter =5;
+System.out.println("\ncounter++ (post): "+counter++);
+System.out.println("counter now: "+counter);6
+System.out.println("\++counter (pre): "++counter);//7
+
+//CONTROL FLOW (if/ else condition, switch case statement, loops(for, while, do while))
+                                               
+System.out.print("Enter your exam score"); // prompt for user input
+int Examscore = scanner.nextInt();
+
+if (Exam >= 90){
+    System.out.println("Grade: A");
+} else if (score >=80){
+    System.out.println("Grade: B");
+} else if (score >=70){
+    System.out.println("Grade: C");
+} else {
+     System.out.println("Grade: F");
+
+// Switch Case Statement 
+System.out.print("\nEnter a day number (1-7): "); 
+int day = scanner.nextInt();
+
+switch (day) {
+        case 1: System.out.println("Monday"); break;
+        case 2: System.out.println("Tuesday"); break;
+        case 3: System.out.println("Wednesday"); break;
+        case 4: System.out.println("Thursday"); break;
+        case 5: System.out.println("Friday"); break;
+        case 6: System.out.println("Saturday"); break;
+        case 7: System.out.println("Sunday"); break;
+        default: System.out.println("Invalid"); break;
+}
+
+// loops (for, while, do while)
+// for loops
+System.out.println("\nCounting 1 to 5 with a for loop: ");
+for(int i=1; i<=B5; i++){
+    System.out.print(i + " ");
+}
+System.out.print();
+
+// while loops 
+System.out.println("\nCounting 1 ")
+int n = 5
+while (n>0){
+    System.out.print( n +"")
+        }
+System.out.print();
+
+    
+// do while
+
+System.out.println("n\do-while example: ");
+int x=0;
+do {
+       System.out.println("x = " +x);
+       x++
+}while (x < 3);
+System.out.println("\nSkipping 3 using continue, stopping at 7 using break: ");
+for (int i =1; i<10; i++){
+    if (i == 3)continue;
+    if (i == 7)break;
+    System.out.print(i + " ");
+}
+System.out.print();
+
+scanner. close();
+     }
+}
+
+// Methods
+// takes two ints, returns their sum 
+static int add(int a, int b){
+    return a + b;
+}
+
+// Takes a double, return its square 
+static double square(dpuble n){
+    return n*n;
+}
+
+// void function: perform an action, returns nothing 
+static void greet(String name){
+    System.out.println("Hello," +name+ "!Welcome to Java.")
+}
+
+// Recursive function call itself with a smaller problem 
+
+static int factorial(int n){
+    if (n<=1){
+    return 1;
+    }
+    return n *factorial(n-1);
+}
+// Overload functions 
+static int multiply(int a, int b){
+    return a * b;
+}
+
+static double multiply(double a, double b){
+    return a*b;
+}
+
+static int power(int base, int exponent){
+    int result =1;
+    for (int i =0; i< exponent; i++){
+             result *= base;
+    }
+    return result;
+}
+
+static int power(int base){
+         return power(base, 2);
+}
+
+// Main Function
+int sum = add(5,7);
+System.out.println("5 + 7 ="+ sum);
+
+double sq = square(4.5);
+System.out.println("4.5 squared = "+ sq);
+
+greet("Maria");
+
+System.out.println)"5! = "+ factorial(5));
+
+System.out.println("multiply(2,3)= "+multiply(2,3));
+System.out.println("multiply(2.5,4.0)= "+multiply(2.5,4.0));
+System.out.println("power(5)= " +power(5));
+System.out.println("multiply(5,3)= " +power(5,3));
+
+
+
+
+scanner. close()
+
+
+
+
+
+    
+// INTRO CARD 
+import java.util.Scanner;
+
+public class Main{
+    public static void main?(String[]args){
+        Scanner scannner = new Scanner(System.in);
+
+        System.out.print("What is your name? ");
+        String name = scanner.nextLine();
+
+        System.out.print("What is your age? ");
+        int age = Integer.parseInt(scanner.nextLine());
+
+        System.out.print("\n-------INTRO CARD--------");
+        System.out.print("Name: "+name);
+        System.out.print("Age: "+age);
+        System.out.print("In 5 years "+name+ "will be" +(age + 5) +" year old.");
+
+
+    }
+
+}
